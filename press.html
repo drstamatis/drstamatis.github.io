@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <title>Press — Signal Psychology</title>
+  <meta name="description" content="Media appearances, expert commentary, and press inquiries for Dr. Caitlin Stamatis.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .press-list { list-style: none; }
+    .press-item {
+      padding: var(--space-md) 0;
+      border-bottom: 1px solid var(--border-light);
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: var(--space-md);
+      align-items: baseline;
+      transition: padding-left 0.3s ease;
+    }
+    .press-item:first-child { border-top: 1px solid var(--border-light); }
+    .press-item:hover { padding-left: 0.5rem; }
+    .press-item__outlet {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+    .press-item__title {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1.35;
+      margin-bottom: 0.25rem;
+    }
+    .press-item__title a { color: var(--text); transition: opacity 0.2s; }
+    .press-item__title a:hover { opacity: 0.6; }
+    .press-item__date { font-size: 0.75rem; color: var(--text-muted); }
+
+    .media-contact {
+      border: 1px solid var(--border);
+      padding: var(--space-lg);
+      margin-top: var(--space-xl);
+    }
+    .media-contact h2 {
+      font-size: 2rem;
+      margin-bottom: var(--space-sm);
+    }
+    .media-contact p {
+      color: var(--text-muted);
+      max-width: 520px;
+      line-height: 1.75;
+      margin-bottom: var(--space-sm);
+    }
+    .media-contact a.email-link {
+      font-size: 1.0625rem;
+      color: var(--text);
+      font-weight: 500;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2px;
+      transition: border-color 0.2s;
+    }
+    .media-contact a.email-link:hover { border-color: var(--text); }
+
+    .topics-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.625rem;
+      margin-top: var(--space-md);
+      margin-bottom: var(--space-md);
+    }
+    .topics-list li {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      padding: 0.4rem 1rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+    }
+
+    @media (max-width: 768px) {
+      .press-item { grid-template-columns: 1fr; gap: 0.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav__logo">Signal Psychology</a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="press.html" class="active">Press</a></li>
+        <li><a href="blog.html">Writing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav__mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero--light">
+    <div class="container">
+      <span class="eyebrow reveal">Press</span>
+      <h1 class="reveal reveal-d1">Media &<br>appearances</h1>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+
+      <!-- Selected press -->
+      <span class="eyebrow">Selected coverage</span>
+
+      <ul class="press-list">
+        <li class="press-item">
+          <div class="press-item__outlet">Thomas Insel / Substack</div>
+          <div>
+            <div class="press-item__title"><a href="https://thomasinsel352222.substack.com/p/chatbot-safety" target="_blank" rel="noopener">Chatbot Safety: Red Teaming, Jail Breaking, and Real World Use</a></div>
+            <div class="press-item__date">January 2026</div>
+          </div>
+        </li>
+        <li class="press-item">
+          <div class="press-item__outlet">Money As If</div>
+          <div>
+            <div class="press-item__title"><a href="https://moneyasif.com/p/navigating-burnout-in-a-shaky-job-market" target="_blank" rel="noopener">Navigating Burnout in a Shaky Job Market</a></div>
+            <div class="press-item__date">April 2026</div>
+          </div>
+        </li>
+        <li class="press-item">
+          <div class="press-item__outlet">Ash by Slingshot AI</div>
+          <div>
+            <div class="press-item__title"><a href="https://www.talktoash.com/posts/ash-by-slingshot-ai-welcomes-new-head-of-research-general-counsel-and-advisors-lori-gottlieb-nina-vasan" target="_blank" rel="noopener">Ash Welcomes New Head of Research, General Counsel, and Advisors</a></div>
+            <div class="press-item__date">November 2025</div>
+          </div>
+        </li>
+        <li class="press-item">
+          <div class="press-item__outlet">AJMC</div>
+          <div>
+            <div class="press-item__title"><a href="https://www.ajmc.com/view/from-stigma-to-solutions-mbgh-panel-explores-mental-health-paradigm-shift-in-the-workplace" target="_blank" rel="noopener">From Stigma to Solutions: MBGH Panel Explores Mental Health Paradigm Shift in the Workplace</a></div>
+            <div class="press-item__date">March 2024</div>
+          </div>
+        </li>
+        <li class="press-item">
+          <div class="press-item__outlet">Medical Xpress</div>
+          <div>
+            <div class="press-item__title"><a href="https://medicalxpress.com/news/2024-07-ai-tools-reveal-complexity-mental.html" target="_blank" rel="noopener">AI Tools Reveal Complexity of Mental Health Measurement</a></div>
+            <div class="press-item__date">July 2024</div>
+          </div>
+        </li>
+        <li class="press-item">
+          <div class="press-item__outlet">The Muse</div>
+          <div>
+            <div class="press-item__title"><a href="https://www.themuse.com/advice/how-to-get-more-support-for-adhd-at-work" target="_blank" rel="noopener">How to Get More Support for ADHD at Work</a></div>
+            <div class="press-item__date">November 2023</div>
+          </div>
+        </li>
+      </ul>
+
+      <div style="margin-top: var(--space-xl);">
+        <span class="eyebrow">Selected speaking</span>
+        <ul class="press-list">
+          <li class="press-item">
+            <div class="press-item__outlet">Wellcome Trust</div>
+            <div>
+              <div class="press-item__title">US Perspective: Successes and Challenges in Digital Mental Health Innovation</div>
+              <div class="press-item__date">London, January 2026</div>
+            </div>
+          </li>
+          <li class="press-item">
+            <div class="press-item__outlet">APA Convention</div>
+            <div>
+              <div class="press-item__title">Evolving Treatment Solutions for Depression Symptoms: The Role of Digital Therapeutics</div>
+              <div class="press-item__date">Denver, August 2025</div>
+            </div>
+          </li>
+          <li class="press-item">
+            <div class="press-item__outlet">Society for Digital Mental Health</div>
+            <div>
+              <div class="press-item__title">Scaling Smart: The Challenge of Clinical Integrity in AI Mental Health Tools</div>
+              <div class="press-item__date">June 2025</div>
+            </div>
+          </li>
+          <li class="press-item">
+            <div class="press-item__outlet">ABCT</div>
+            <div>
+              <div class="press-item__title">Engagement in Digital Mental Health — Invited Panel</div>
+              <div class="press-item__date">New Orleans, November 2025</div>
+            </div>
+          </li>
+          <li class="press-item">
+            <div class="press-item__outlet">WELL Women</div>
+            <div>
+              <div class="press-item__title">Women Leaders in Digital Health</div>
+              <div class="press-item__date">December 2025</div>
+            </div>
+          </li>
+          <li class="press-item">
+            <div class="press-item__outlet">BiteLabs Fellowship</div>
+            <div>
+              <div class="press-item__title">Navigating the US Digital Health Ecosystem: The Clinician's Role in Technology Development</div>
+              <div class="press-item__date">May 2025</div>
+            </div>
+          </li>
+          <li class="press-item">
+            <div class="press-item__outlet">MBGH</div>
+            <div>
+              <div class="press-item__title">Mental Health in the Workplace — Expert Panel</div>
+              <div class="press-item__date">Chicago, February 2024</div>
+            </div>
+          </li>
+          <li class="press-item">
+            <div class="press-item__outlet">Weill Cornell</div>
+            <div>
+              <div class="press-item__title">Personal Sensing of Depression and Anxiety Symptoms — Research Grand Rounds</div>
+              <div class="press-item__date">New York, May 2023</div>
+            </div>
+          </li>
+          <li class="press-item">
+            <div class="press-item__outlet">NYU School of Medicine</div>
+            <div>
+              <div class="press-item__title">Cognitive, Behavioral, and Affective Correlates of Repetitive Negative Thinking — Research Grand Rounds</div>
+              <div class="press-item__date">New York, February 2023</div>
+            </div>
+          </li>
+        </ul>
+        <p style="margin-top: var(--space-sm); color: var(--text-muted); font-size: 0.875rem;">This is a selected list of recent engagements. Full speaking history includes 30+ invited talks and 40+ conference presentations.</p>
+      </div>
+
+      <div style="margin-top: var(--space-xl);">
+        <span class="eyebrow">Leadership</span>
+        <ul class="press-list">
+          <li class="press-item">
+            <div class="press-item__outlet">SDMH</div>
+            <div>
+              <div class="press-item__title">Co-Chair, 2026 Society for Digital Mental Health Annual Conference</div>
+            </div>
+          </li>
+          <li class="press-item">
+            <div class="press-item__outlet">SDMH</div>
+            <div>
+              <div class="press-item__title">Founding Co-Chair, Industry Special Interest Group</div>
+            </div>
+          </li>
+          <li class="press-item">
+            <div class="press-item__outlet">ABCT</div>
+            <div>
+              <div class="press-item__title">Co-Chair, Technology SIG AI Working Group</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div style="margin-top: var(--space-xl);">
+        <span class="eyebrow">Recognition</span>
+        <ul class="press-list">
+          <li class="press-item">
+            <div class="press-item__outlet">Northwestern CBITs</div>
+            <div>
+              <div class="press-item__title">Rising Star Honorable Mention — Center for Behavioral Intervention Technologies</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Media contact -->
+      <div class="media-contact">
+        <h2>Media inquiries</h2>
+        <p>I'm available for expert commentary, panels, and interviews. Some areas I'm regularly asked about:</p>
+
+        <ul class="topics-list">
+          <li>AI & mental health</li>
+          <li>Digital therapeutics</li>
+          <li>Clinical evidence in health tech</li>
+          <li>ADHD & digital interventions</li>
+          <li>Psychology of technology use</li>
+          <li>Workplace mental health</li>
+        </ul>
+
+        <p>For press inquiries, interviews, or speaking requests:</p>
+        <a href="mailto:press@signalpsychology.com" class="email-link">press@signalpsychology.com</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copy">&copy; 2026 Signal Psychology</p>
+      <ul class="footer__links">
+        <li><a href="mailto:hello@signalpsychology.com">Email</a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

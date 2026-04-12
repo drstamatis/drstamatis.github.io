@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <title>Services — Signal Psychology</title>
+  <meta name="description" content="Health tech consulting and individual therapy from Signal Psychology.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .section-illust {
+      position: relative;
+      overflow: hidden;
+    }
+    .section-illust__img {
+      position: absolute;
+      right: -5%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 45%;
+      max-width: 400px;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .section-illust > .container { position: relative; z-index: 1; }
+    @media (max-width: 768px) {
+      .section-illust__img { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav__logo">Signal Psychology</a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="press.html">Press</a></li>
+        <li><a href="blog.html">Writing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav__mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero--light">
+    <div class="container">
+      <span class="eyebrow reveal">Services</span>
+      <h1 class="reveal reveal-d1">Two practices,<br>one perspective.</h1>
+      <p class="hero__sub reveal reveal-d2">Bringing clinical rigor to the places it matters most — whether that's a product roadmap or a therapy session.</p>
+    </div>
+  </section>
+
+  <!-- Consulting -->
+  <section class="section section--border section-illust" id="consulting">
+    <img src="img/illust-network.svg" alt="" class="section-illust__img" aria-hidden="true">
+    <div class="container">
+      <div class="split" style="margin-bottom: var(--space-lg);">
+        <div>
+          <span class="eyebrow">Consulting</span>
+          <h2>Health Tech<br>Advisory</h2>
+        </div>
+        <div style="padding-top: 0.5rem;">
+          <p style="color: var(--text-muted); max-width: 480px; line-height: 1.75;">For companies building digital health products who want to get the clinical side right — not as an afterthought, but as a core part of how they build.</p>
+        </div>
+      </div>
+
+      <ul class="service-list">
+        <li class="service-item">
+          <span class="service-item__num">01</span>
+          <div>
+            <h3>Clinical Strategy</h3>
+            <p>Helping product and leadership teams understand the clinical evidence landscape, define appropriate claims, and build products grounded in what the research actually supports.</p>
+          </div>
+        </li>
+        <li class="service-item">
+          <span class="service-item__num">02</span>
+          <div>
+            <h3>Research Design</h3>
+            <p>Designing studies, outcomes frameworks, and validation strategies that are both scientifically sound and practical for a product context.</p>
+          </div>
+        </li>
+        <li class="service-item">
+          <span class="service-item__num">03</span>
+          <div>
+            <h3>Content & Safety Review</h3>
+            <p>Clinical review of product content, safety protocols, and user-facing language. Making sure what you say matches what you can support.</p>
+          </div>
+        </li>
+        <li class="service-item">
+          <span class="service-item__num">04</span>
+          <div>
+            <h3>Team Workshops</h3>
+            <p>Bridging the gap between clinical and product teams through facilitated workshops on evidence standards, ethical considerations, and clinical literacy.</p>
+          </div>
+        </li>
+      </ul>
+
+      <p style="color: var(--text-muted); margin-top: var(--space-md); max-width: 560px; line-height: 1.75;">Engagements range from one-time reviews to ongoing advisory relationships. I work with early-stage startups, growth-stage companies, and established organizations navigating new digital health initiatives.</p>
+    </div>
+  </section>
+
+  <!-- Therapy -->
+  <section class="section section--border section-illust" id="therapy">
+    <img src="img/illust-wave.svg" alt="" class="section-illust__img" aria-hidden="true">
+    <div class="container">
+      <div class="split">
+        <div>
+          <span class="eyebrow">Therapy</span>
+          <h2>Individual<br>Therapy</h2>
+        </div>
+        <div style="padding-top: 0.5rem;">
+          <p style="color: var(--text-muted); max-width: 480px; line-height: 1.75; margin-bottom: var(--space-sm);">I work with adults navigating anxiety, depression, perfectionism, burnout, life transitions, and the particular brand of stress that comes with high-performance environments.</p>
+
+          <p style="color: var(--text-muted); max-width: 480px; line-height: 1.75; margin-bottom: var(--space-sm);">My approach is grounded in evidence-based frameworks — primarily cognitive behavioral therapy and acceptance-based approaches — but what that looks like in practice is a conversation tailored to you, not a protocol applied at you.</p>
+
+          <p style="color: var(--text-muted); max-width: 480px; line-height: 1.75; margin-bottom: var(--space-sm);">I'm especially drawn to working with people in tech, healthcare, and academia — partly because I understand those worlds from the inside, and partly because the pressures of those environments create a specific kind of struggle that benefits from a therapist who gets the context.</p>
+
+          <p style="color: var(--text-muted); max-width: 480px; line-height: 1.75; margin-bottom: var(--space-md);">Therapy is offered virtually. I am licensed in New York, New Jersey, and all <a href="https://psypact.org/mpage/psypactmap" target="_blank" rel="noopener" style="color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 1px; transition: border-color 0.2s;">PSYPACT states</a>.</p>
+
+          <a href="contact.html" class="btn btn--dark">Inquire about therapy</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copy">&copy; 2026 Signal Psychology</p>
+      <ul class="footer__links">
+        <li><a href="mailto:hello@signalpsychology.com">Email</a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

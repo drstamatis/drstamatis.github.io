@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <!-- Abstract signal/neural pathway motif — fine lines, terracotta accent nodes -->
+
+  <!-- Main flowing signal line -->
+  <path d="M-20 400 Q100 380 180 320 Q260 260 320 300 Q380 340 440 280 Q500 220 560 260 Q620 300 680 240 Q740 180 820 200"
+        stroke="#F4F1EC" stroke-width="1" opacity="0.6"/>
+
+  <!-- Secondary wave -->
+  <path d="M-20 420 Q120 400 200 350 Q280 300 360 330 Q440 360 500 310 Q560 260 640 290 Q720 320 820 280"
+        stroke="#F4F1EC" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Tertiary wave -->
+  <path d="M-20 380 Q80 360 160 290 Q240 220 300 270 Q360 320 420 250 Q480 180 540 230 Q600 280 660 210 Q720 140 820 170"
+        stroke="#F4F1EC" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Node points — terracotta accent -->
+  <circle cx="180" cy="320" r="4" fill="#B5705A" opacity="0.7"/>
+  <circle cx="320" cy="300" r="3" fill="#F4F1EC" opacity="0.4"/>
+  <circle cx="440" cy="280" r="5" fill="#B5705A" opacity="0.85"/>
+  <circle cx="560" cy="260" r="3" fill="#F4F1EC" opacity="0.4"/>
+  <circle cx="680" cy="240" r="4" fill="#B5705A" opacity="0.7"/>
+
+  <!-- Radiating connection lines from nodes -->
+  <line x1="180" y1="320" x2="200" y2="270" stroke="#F4F1EC" stroke-width="0.5" opacity="0.2"/>
+  <line x1="180" y1="320" x2="150" y2="280" stroke="#F4F1EC" stroke-width="0.5" opacity="0.15"/>
+  <line x1="440" y1="280" x2="470" y2="230" stroke="#B5705A" stroke-width="0.5" opacity="0.3"/>
+  <line x1="440" y1="280" x2="410" y2="240" stroke="#B5705A" stroke-width="0.5" opacity="0.2"/>
+  <line x1="440" y1="280" x2="460" y2="320" stroke="#F4F1EC" stroke-width="0.5" opacity="0.15"/>
+  <line x1="680" y1="240" x2="710" y2="200" stroke="#F4F1EC" stroke-width="0.5" opacity="0.2"/>
+  <line x1="680" y1="240" x2="660" y2="200" stroke="#F4F1EC" stroke-width="0.5" opacity="0.15"/>
+
+  <!-- Tiny scatter dots -->
+  <circle cx="120" cy="340" r="1.5" fill="#F4F1EC" opacity="0.15"/>
+  <circle cx="250" cy="290" r="1" fill="#B5705A" opacity="0.25"/>
+  <circle cx="380" cy="310" r="1.5" fill="#F4F1EC" opacity="0.12"/>
+  <circle cx="510" cy="250" r="1" fill="#B5705A" opacity="0.2"/>
+  <circle cx="600" cy="275" r="1.5" fill="#F4F1EC" opacity="0.15"/>
+  <circle cx="740" cy="220" r="1" fill="#F4F1EC" opacity="0.2"/>
+  <circle cx="160" cy="360" r="1" fill="#F4F1EC" opacity="0.1"/>
+  <circle cx="290" cy="260" r="1.5" fill="#F4F1EC" opacity="0.1"/>
+  <circle cx="470" cy="310" r="1" fill="#F4F1EC" opacity="0.12"/>
+  <circle cx="620" cy="230" r="1" fill="#F4F1EC" opacity="0.15"/>
+
+  <!-- Faint concentric rings around primary node — terracotta -->
+  <circle cx="440" cy="280" r="20" stroke="#B5705A" stroke-width="0.5" opacity="0.15"/>
+  <circle cx="440" cy="280" r="35" stroke="#B5705A" stroke-width="0.3" opacity="0.08"/>
+  <circle cx="440" cy="280" r="50" stroke="#F4F1EC" stroke-width="0.3" opacity="0.04"/>
+</svg>

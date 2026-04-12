@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <title>Contact — Signal Psychology</title>
+  <meta name="description" content="Get in touch with Signal Psychology.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .form-frame {
+      position: relative;
+      padding: var(--space-lg);
+      margin-top: var(--space-md);
+    }
+    .form-frame::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 60px; height: 60px;
+      border-top: 1px solid var(--accent);
+      border-left: 1px solid var(--accent);
+      opacity: 0.3;
+      pointer-events: none;
+    }
+    .form-frame::after {
+      content: '';
+      position: absolute;
+      bottom: 0; right: 0;
+      width: 60px; height: 60px;
+      border-bottom: 1px solid var(--accent);
+      border-right: 1px solid var(--accent);
+      opacity: 0.3;
+      pointer-events: none;
+    }
+    @media (max-width: 768px) {
+      .form-frame { padding: var(--space-md) var(--space-sm); }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav__logo">Signal Psychology</a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="press.html">Press</a></li>
+        <li><a href="blog.html">Writing</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="nav__mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero--light">
+    <div class="container">
+      <span class="eyebrow reveal">Contact</span>
+      <h1 class="reveal reveal-d1">Let's talk.</h1>
+      <p class="hero__sub reveal reveal-d2">Whether you're a company looking for clinical expertise or an individual interested in therapy.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <!--
+        This form uses Formspree (free tier = 50 submissions/month).
+        1. Create an account at https://formspree.io
+        2. Create a new form and copy your form ID
+        3. Replace "YOUR_FORM_ID" below with your actual ID
+      -->
+      <img src="img/illust-wave.svg" alt="" style="display: block; width: 100%; max-width: 480px; margin: 0 auto var(--space-md);" aria-hidden="true">
+      <div class="form-frame">
+      <form class="form reveal reveal-d2" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form__group">
+          <label class="form__label" for="name">Name</label>
+          <input class="form__input" type="text" id="name" name="name" required>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="email">Email</label>
+          <input class="form__input" type="email" id="email" name="email" required>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="interest">Interested in</label>
+          <select class="form__select" id="interest" name="interest">
+            <option value="">Select one</option>
+            <option value="consulting">Health tech consulting</option>
+            <option value="therapy">Therapy services</option>
+            <option value="speaking">Speaking or workshops</option>
+            <option value="other">Something else</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="message">Message</label>
+          <textarea class="form__textarea" id="message" name="message" placeholder="Tell me a bit about what you're looking for." required></textarea>
+        </div>
+        <button type="submit" class="btn btn--dark">Send message</button>
+      </form>
+      </div>
+
+      <p style="margin-top: var(--space-lg); color: var(--text-muted); font-size: 0.875rem;">Or reach me directly at <a href="mailto:hello@signalpsychology.com" style="color: var(--text);">hello@signalpsychology.com</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copy">&copy; 2026 Signal Psychology</p>
+      <ul class="footer__links">
+        <li><a href="mailto:hello@signalpsychology.com">Email</a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

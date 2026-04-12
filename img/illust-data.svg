@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" fill="none">
+  <!-- Abstract data visualization — scatter + trend line — research -->
+
+  <!-- Axis lines -->
+  <line x1="80" y1="340" x2="620" y2="340" stroke="#111111" stroke-width="0.75" opacity="0.08"/>
+  <line x1="80" y1="340" x2="80" y2="60" stroke="#111111" stroke-width="0.75" opacity="0.08"/>
+
+  <!-- Faint grid lines -->
+  <line x1="80" y1="270" x2="620" y2="270" stroke="#111111" stroke-width="0.3" opacity="0.04" stroke-dasharray="4 6"/>
+  <line x1="80" y1="200" x2="620" y2="200" stroke="#111111" stroke-width="0.3" opacity="0.04" stroke-dasharray="4 6"/>
+  <line x1="80" y1="130" x2="620" y2="130" stroke="#111111" stroke-width="0.3" opacity="0.04" stroke-dasharray="4 6"/>
+
+  <!-- Trend line — terracotta accent -->
+  <path d="M100 300 Q200 280 280 240 Q360 200 440 170 Q520 140 600 120"
+        stroke="#B5705A" stroke-width="1.5" opacity="0.2"/>
+
+  <!-- Data scatter points — mix of dark and terracotta -->
+  <circle cx="120" cy="290" r="4" fill="#111111" opacity="0.12"/>
+  <circle cx="145" cy="310" r="3" fill="#B5705A" opacity="0.15"/>
+  <circle cx="170" cy="275" r="3.5" fill="#111111" opacity="0.1"/>
+  <circle cx="200" cy="285" r="4.5" fill="#B5705A" opacity="0.18"/>
+  <circle cx="230" cy="260" r="3" fill="#111111" opacity="0.08"/>
+  <circle cx="255" cy="270" r="3.5" fill="#111111" opacity="0.1"/>
+  <circle cx="280" cy="240" r="5" fill="#B5705A" opacity="0.2"/>
+  <circle cx="310" cy="250" r="3" fill="#111111" opacity="0.08"/>
+  <circle cx="335" cy="225" r="4" fill="#111111" opacity="0.12"/>
+  <circle cx="360" cy="210" r="3.5" fill="#B5705A" opacity="0.15"/>
+  <circle cx="390" cy="195" r="4.5" fill="#111111" opacity="0.14"/>
+  <circle cx="415" cy="185" r="3" fill="#111111" opacity="0.08"/>
+  <circle cx="440" cy="170" r="5" fill="#B5705A" opacity="0.2"/>
+  <circle cx="470" cy="160" r="3.5" fill="#111111" opacity="0.1"/>
+  <circle cx="495" cy="150" r="4" fill="#B5705A" opacity="0.15"/>
+  <circle cx="520" cy="140" r="3" fill="#111111" opacity="0.08"/>
+  <circle cx="550" cy="130" r="4.5" fill="#111111" opacity="0.14"/>
+  <circle cx="580" cy="120" r="3.5" fill="#B5705A" opacity="0.15"/>
+  <circle cx="600" cy="115" r="4" fill="#111111" opacity="0.12"/>
+
+  <!-- Outliers -->
+  <circle cx="190" cy="240" r="2.5" fill="#111111" opacity="0.06"/>
+  <circle cx="330" cy="185" r="2" fill="#B5705A" opacity="0.08"/>
+  <circle cx="480" cy="200" r="2.5" fill="#111111" opacity="0.06"/>
+  <circle cx="560" cy="165" r="2" fill="#111111" opacity="0.05"/>
+
+  <!-- Confidence band hint -->
+  <path d="M100 280 Q200 260 280 220 Q360 180 440 150 Q520 120 600 100"
+        stroke="#B5705A" stroke-width="0.5" opacity="0.06" stroke-dasharray="3 5"/>
+  <path d="M100 320 Q200 300 280 260 Q360 220 440 190 Q520 160 600 140"
+        stroke="#B5705A" stroke-width="0.5" opacity="0.06" stroke-dasharray="3 5"/>
+</svg>

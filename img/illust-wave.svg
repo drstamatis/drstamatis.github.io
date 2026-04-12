@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <!-- Organic wave/breath motif — therapy, warmth, presence -->
+
+  <!-- Primary gentle wave — terracotta -->
+  <path d="M0 200 Q75 160 150 200 Q225 240 300 200 Q375 160 450 200 Q525 240 600 200"
+        stroke="#B5705A" stroke-width="1.5" opacity="0.12"/>
+
+  <!-- Parallel breathing waves -->
+  <path d="M0 185 Q75 150 150 185 Q225 220 300 185 Q375 150 450 185 Q525 220 600 185"
+        stroke="#111111" stroke-width="0.75" opacity="0.05"/>
+  <path d="M0 215 Q75 175 150 215 Q225 255 300 215 Q375 175 450 215 Q525 255 600 215"
+        stroke="#111111" stroke-width="0.75" opacity="0.05"/>
+
+  <!-- Wider gentle waves -->
+  <path d="M0 165 Q75 140 150 165 Q225 190 300 165 Q375 140 450 165 Q525 190 600 165"
+        stroke="#111111" stroke-width="0.5" opacity="0.03"/>
+  <path d="M0 235 Q75 210 150 235 Q225 260 300 235 Q375 210 450 235 Q525 260 600 235"
+        stroke="#111111" stroke-width="0.5" opacity="0.03"/>
+
+  <!-- Soft gradient circles — terracotta accents -->
+  <circle cx="150" cy="200" r="30" stroke="#B5705A" stroke-width="0.5" opacity="0.06"/>
+  <circle cx="150" cy="200" r="50" stroke="#111111" stroke-width="0.3" opacity="0.02"/>
+  <circle cx="450" cy="200" r="30" stroke="#B5705A" stroke-width="0.5" opacity="0.06"/>
+  <circle cx="450" cy="200" r="50" stroke="#111111" stroke-width="0.3" opacity="0.02"/>
+</svg>

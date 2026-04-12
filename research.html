@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <title>Research — Signal Psychology</title>
+  <meta name="description" content="Peer-reviewed publications and research by Caitlin A. Stamatis, PhD.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .pub-list { list-style: none; }
+    .pub-item {
+      padding: var(--space-sm) 0;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .pub-item:first-child { border-top: 1px solid var(--border-light); }
+    .pub-item__title {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      line-height: 1.5;
+      color: var(--text);
+    }
+    .pub-item__title a { color: var(--text); transition: opacity 0.2s; }
+    .pub-item__title a:hover { opacity: 0.6; }
+    .pub-item__meta {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-top: 0.2rem;
+    }
+    .pub-item__meta em { font-style: italic; }
+
+    .pub-year-heading {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 300;
+      margin-top: var(--space-lg);
+      margin-bottom: var(--space-sm);
+      color: var(--text);
+    }
+    .pub-year-heading:first-of-type { margin-top: 0; }
+
+    .scholar-banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: var(--space-md);
+      border: 1px solid var(--border);
+      margin-bottom: var(--space-lg);
+      gap: var(--space-md);
+    }
+    .scholar-banner p { color: var(--text-muted); font-size: 0.9375rem; }
+    .scholar-banner .btn { white-space: nowrap; }
+
+    .scholar-stats {
+      display: flex;
+      gap: var(--space-lg);
+      margin-bottom: var(--space-xl);
+    }
+    .scholar-stat__num {
+      font-family: var(--font-serif);
+      font-size: 2.5rem;
+      font-weight: 300;
+      line-height: 1.1;
+      color: var(--text);
+      margin-bottom: 0.25rem;
+    }
+    .scholar-stat__label {
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      .scholar-banner { flex-direction: column; align-items: flex-start; }
+      .scholar-stats { flex-direction: column; gap: var(--space-sm); }
+    }
+    .research-illust {
+      display: block;
+      width: 100%;
+      max-width: 600px;
+      margin: var(--space-lg) auto var(--space-md);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav__logo">Signal Psychology</a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
+        <li><a href="press.html">Press</a></li>
+        <li><a href="blog.html">Writing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav__mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero--light">
+    <div class="container">
+      <span class="eyebrow reveal">Research</span>
+      <h1 class="reveal reveal-d1">Publications</h1>
+      <p class="hero__sub reveal reveal-d2">Peer-reviewed work spanning digital phenotyping, digital therapeutics, AI safety in mental health, anxiety, depression, and clinical methodology.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+
+      <div class="scholar-banner reveal">
+        <p>For the complete record with citation metrics, visit Google Scholar.</p>
+        <a href="https://scholar.google.com/citations?user=DkkecTkAAAAJ&hl=en" target="_blank" rel="noopener" class="btn btn--dark">Google Scholar</a>
+      </div>
+
+      <div class="scholar-stats reveal reveal-d1">
+        <div>
+          <div class="scholar-stat__num" data-target="1000" data-suffix="+">0</div>
+          <div class="scholar-stat__label">Citations</div>
+        </div>
+        <div>
+          <div class="scholar-stat__num" data-target="50" data-suffix="+">0</div>
+          <div class="scholar-stat__label">Publications</div>
+        </div>
+      </div>
+
+      <img src="img/illust-data.svg" alt="" class="research-illust reveal" aria-hidden="true">
+
+      <!-- 2026 -->
+      <h3 class="pub-year-heading">2026</h3>
+      <ul class="pub-list">
+        <li class="pub-item">
+          <div class="pub-item__title"><a href="https://preprints.jmir.org/preprint/94080" target="_blank" rel="noopener">Talking to a Human as an Attitudinal Barrier: A Mixed Methods Evaluation of Stigma, Access, and the Appeal of AI Mental Health Support</a></div>
+          <div class="pub-item__meta"><strong>Stamatis CA</strong>, Wolfe EC, Malgaroli M, Hull TD. <em>JMIR Preprints</em> (under review)</div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-item__title"><a href="https://osf.io/preprints/psyarxiv/et8ma_v1" target="_blank" rel="noopener">Generic AI or Nothing: Support-Seeking Patterns After Market Withdrawal of a Purpose-Built AI Wellbeing Tool</a></div>
+          <div class="pub-item__meta"><strong>Stamatis CA</strong>, Kruzan KP, Hsu J, Ungless MA, Hull TD. <em>PsyArXiv</em> (under review)</div>
+        </li>
+      </ul>
+
+      <!-- 2025 -->
+      <h3 class="pub-year-heading">2025</h3>
+      <ul class="pub-list">
+        <li class="pub-item">
+          <div class="pub-item__title">Beyond Simulations: What 20,000 Real Conversations Reveal About Mental Health AI Safety</div>
+          <div class="pub-item__meta"><strong>Stamatis CA</strong>, Meyerhoff J, Zhang L, Tieleman O, Malgaroli M, Hull TD. <em>arXiv</em> (under review)</div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-item__title">Improving Mental Health Care Access with Technology: Addressing the Screening-to-Referral Bottleneck</div>
+          <div class="pub-item__meta">Gorelik AJ, Radin AS, Bogdan R, <strong>Stamatis CA</strong>. <em>NEJM AI</em></div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-item__title">Past, Present, and Future: A Survey of the Evolution of Affective Robotics for Well-Being</div>
+          <div class="pub-item__meta">Spitale M, Axelsson M, ..., Stamatis CA, et al. <em>IEEE Transactions on Affective Computing</em></div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-item__title">A Digital Intervention for Cognitive Deficits Following COVID-19: A Randomized Clinical Trial</div>
+          <div class="pub-item__meta">Victoria LW, Oberlin LE, ..., <strong>Stamatis CA</strong>, et al. <em>Neuropsychopharmacology</em></div>
+        </li>
+      </ul>
+
+      <!-- 2024 -->
+      <h3 class="pub-year-heading">2024</h3>
+      <ul class="pub-list">
+        <li class="pub-item">
+          <div class="pub-item__title">Real-Time Cognitive Performance Metrics Derived from a Digital Therapeutic for Inattention Predict ADHD-Related Clinical Outcomes</div>
+          <div class="pub-item__meta"><strong>Stamatis CA</strong>, Heusser AC, Simon TJ, Ala'ilima T, Kollins SK. <em>Translational Psychiatry</em></div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-item__title">Two Single Arm Trials of AKL-T01, a Digital Therapeutic for Adolescents and Adults with ADHD</div>
+          <div class="pub-item__meta"><strong>Stamatis CA</strong>, Farlow DN, Mercaldi C, et al. <em>npj Mental Health Research</em></div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-item__title">Differential Temporal Utility of Passively Sensed Smartphone Features for Depression and Anxiety Symptom Prediction</div>
+          <div class="pub-item__meta"><strong>Stamatis CA</strong>, Meyerhoff J, Meng Y, et al. <em>npj Mental Health Research</em></div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-item__title">Measuring Algorithmic Bias to Analyze the Reliability of AI Tools That Predict Depression Risk</div>
+          <div class="pub-item__meta">Adler DA, <strong>Stamatis CA</strong>, Meyerhoff J, et al. <em>npj Mental Health Research</em></div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-item__title">Longitudinal Associations of Daily Affective Dynamics with Depression, Generalized Anxiety, and Social Anxiety Symptoms</div>
+          <div class="pub-item__meta">Lakhtakia T, Smith SR, Mohr DC, <strong>Stamatis CA</strong>. <em>Journal of Affective Disorders</em></div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-item__title">Worry and Rumination Elicit Similar Neural Representations: Neuroimaging Evidence for Repetitive Negative Thinking</div>
+          <div class="pub-item__meta">Puccetti NA, <strong>Stamatis CA</strong>, Timpano KR, Heller AS. <em>Cognitive, Affective, & Behavioral Neuroscience</em></div>
+        </li>
+      </ul>
+
+      <!-- 2023 -->
+      <h3 class="pub-year-heading">2023</h3>
+      <ul class="pub-list">
+        <li class="pub-item">
+          <div class="pub-item__title">Specific Associations of Passively Sensed Smartphone Data with Future Symptoms of Avoidance, Fear, and Physiological Distress in Social Anxiety</div>
+          <div class="pub-item__meta"><strong>Stamatis CA</strong>, Liu T, Meyerhoff J, et al. <em>Internet Interventions</em></div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-item__title">A Text Messaging Intervention to Support the Mental Health of Young Adults</div>
+          <div class="pub-item__meta">Kornfield R, <strong>Stamatis CA</strong>, Bhattacharjee A, et al. <em>Internet Interventions</em></div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-item__title">Analyzing Text Message Linguistic Features: Do People with Depression Communicate Differently with Their Close and Non-Close Contacts?</div>
+          <div class="pub-item__meta">Meyerhoff J, Liu T, <strong>Stamatis CA</strong>, et al. <em>Behaviour Research and Therapy</em></div>
+        </li>
+      </ul>
+
+      <!-- 2022 -->
+      <h3 class="pub-year-heading">2022</h3>
+      <ul class="pub-list">
+        <li class="pub-item">
+          <div class="pub-item__title">Prospective Associations of Text-Message-Based Sentiment with Symptoms of Depression, Generalized Anxiety, and Social Anxiety</div>
+          <div class="pub-item__meta"><strong>Stamatis CA</strong>, Meyerhoff J, Liu T, et al. <em>Depression & Anxiety</em></div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-item__title">Focusing on Accessibility of Evidence-Based Treatments for Obsessive-Compulsive Disorder</div>
+          <div class="pub-item__meta">Lattie EG, <strong>Stamatis CA</strong>. <em>JAMA Network Open</em></div>
+        </li>
+      </ul>
+
+      <!-- 2020-2021 -->
+      <h3 class="pub-year-heading">2020 – 2021</h3>
+      <ul class="pub-list">
+        <li class="pub-item">
+          <div class="pub-item__title">A Longitudinal Investigation of COVID-19 Pandemic Experiences and Mental Health Among University Students</div>
+          <div class="pub-item__meta"><strong>Stamatis CA</strong>, Broos H, Hudiburgh SE, Dale S, Timpano KR. <em>British Journal of Clinical Psychology</em>, 2021</div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-item__title">Daily Affective Experiences Distinguish Psychiatric Classification Domains</div>
+          <div class="pub-item__meta">Heller AS, <strong>Stamatis CA</strong>, Puccetti NA, Timpano KR. <em>Journal of Abnormal Psychology</em>, 2021</div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-item__title">Repetitive Negative Thinking Following a Natural Disaster Predicts Altered Stress Responding and Decision-Making</div>
+          <div class="pub-item__meta"><strong>Stamatis CA</strong>, Puccetti NA, Heller AS, Timpano KR. <em>Behaviour Research and Therapy</em>, 2020</div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-item__title">Using Supervised Machine Learning on Neuropsychological Data to Distinguish OCD Patients with and without Sensory Phenomena</div>
+          <div class="pub-item__meta"><strong>Stamatis CA</strong>, Batistuzzo MC, et al. <em>British Journal of Clinical Psychology</em>, 2020</div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-item__title">A Neuroeconomic Investigation of 5-HTT/5-HT1A, Social Anxiety and Risk-Taking Behavior</div>
+          <div class="pub-item__meta"><strong>Stamatis CA</strong>, Engelmann JB, et al. <em>Anxiety, Stress, and Coping</em>, 2020</div>
+        </li>
+      </ul>
+
+      <p style="margin-top: var(--space-lg); color: var(--text-muted); font-size: 0.875rem;">This is a selected list of 20+ publications. Visit <a href="https://scholar.google.com/citations?user=DkkecTkAAAAJ&hl=en" target="_blank" rel="noopener" style="color: var(--text);">Google Scholar</a> for the complete record of 50+ peer-reviewed articles, book chapters, and conference proceedings.</p>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copy">&copy; 2026 Signal Psychology</p>
+      <ul class="footer__links">
+        <li><a href="mailto:hello@signalpsychology.com">Email</a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    // Animate stat counters on scroll
+    const counters = document.querySelectorAll('.scholar-stat__num[data-target]');
+    let animated = false;
+    function animateCounters() {
+      if (animated) return;
+      const rect = counters[0]?.getBoundingClientRect();
+      if (!rect || rect.top > window.innerHeight * 0.85) return;
+      animated = true;
+      counters.forEach(el => {
+        const target = +el.dataset.target;
+        const suffix = el.dataset.suffix || '';
+        const duration = 1600;
+        const start = performance.now();
+        function tick(now) {
+          const t = Math.min((now - start) / duration, 1);
+          const ease = 1 - Math.pow(1 - t, 3);
+          const val = Math.round(ease * target);
+          el.textContent = val.toLocaleString() + suffix;
+          if (t < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      });
+    }
+    window.addEventListener('scroll', animateCounters, { passive: true });
+    animateCounters();
+  </script>
+</body>
+</html>
