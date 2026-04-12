@@ -26,6 +26,31 @@
       background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
     }
 
+    /* LinkedIn feed — horizontal scroll */
+    .linkedin-feed {
+      display: flex;
+      gap: var(--space-md);
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: var(--space-sm);
+      scrollbar-width: thin;
+      scrollbar-color: var(--border) transparent;
+    }
+    .linkedin-feed::-webkit-scrollbar { height: 4px; }
+    .linkedin-feed::-webkit-scrollbar-track { background: transparent; }
+    .linkedin-feed::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+    .linkedin-feed__item {
+      flex: 0 0 auto;
+      width: 504px;
+      max-width: 85vw;
+      scroll-snap-align: start;
+    }
+    .linkedin-feed__item iframe {
+      width: 100%;
+      border-radius: 0;
+    }
+
     /* Service number hover */
     .service-item__num {
       transition: transform 0.3s ease, opacity 0.3s ease;
@@ -124,6 +149,35 @@
           <div style="margin-top: var(--space-md);">
             <a href="blog.html" class="link-arrow link-arrow--muted">All writing</a>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LinkedIn -->
+  <section class="section section--border">
+    <div class="container">
+      <div class="split" style="margin-bottom: var(--space-lg);">
+        <div>
+          <span class="eyebrow">LinkedIn</span>
+          <h2>From the feed</h2>
+        </div>
+        <div style="padding-top: 0.5rem; display: flex; align-items: flex-end;">
+          <a href="https://www.linkedin.com/in/cstamatis/" target="_blank" rel="noopener" class="link-arrow link-arrow--muted">Follow on LinkedIn</a>
+        </div>
+      </div>
+      <div class="linkedin-feed">
+        <div class="linkedin-feed__item">
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7444563825854599169" height="500" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        </div>
+        <div class="linkedin-feed__item">
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7442927093396570112" height="500" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        </div>
+        <div class="linkedin-feed__item">
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7423047672938373120" height="500" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        </div>
+        <div class="linkedin-feed__item">
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7417654657747046400" height="500" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
         </div>
       </div>
     </div>
