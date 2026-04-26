@@ -80,8 +80,36 @@
       letter-spacing: 0.01em;
     }
 
+    .testimonial {
+      border-left: 2px solid var(--accent);
+      padding: var(--space-sm) 0 var(--space-sm) var(--space-md);
+      max-width: 720px;
+    }
+    .testimonial__quote {
+      font-family: var(--font-serif);
+      font-size: 1.375rem;
+      font-weight: 300;
+      line-height: 1.5;
+      color: var(--text);
+      margin-bottom: var(--space-sm);
+      font-style: italic;
+    }
+    .testimonial__attribution {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      letter-spacing: 0.01em;
+    }
+    .testimonial__attribution a {
+      color: var(--text);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1px;
+      transition: border-color 0.2s;
+    }
+    .testimonial__attribution a:hover { border-color: var(--text); }
+
     @media (max-width: 768px) {
       .press-item { grid-template-columns: 1fr; gap: 0.25rem; }
+      .testimonial__quote { font-size: 1.125rem; }
     }
   </style>
 </head>
@@ -233,6 +261,16 @@
       </div>
 
       <div style="margin-top: var(--space-xl);">
+        <span class="eyebrow">What people say</span>
+        <div style="margin-top: var(--space-md);">
+          <blockquote class="testimonial">
+            <p class="testimonial__quote">"Caitlin facilitated a thoughtful and engaging discussion with graduate students in my Digital Mental Health course at Dartmouth — a group with diverse backgrounds and career goals. Her ability to communicate complex ideas, from clinical nuances to implementation barriers in digital health, is unmatched. Her guest lecture sparked one of the most engaging conversations of the course, and several students shared this was a highlight of the term."</p>
+            <p class="testimonial__attribution">— <a href="https://www.c4tbh.org/meet-our-team/madelyn-r-frumkin/" target="_blank" rel="noopener">Dr. Madelyn R. Frumkin</a>, Dartmouth</p>
+          </blockquote>
+        </div>
+      </div>
+
+      <div style="margin-top: var(--space-xl);">
         <span class="eyebrow">Leadership</span>
         <ul class="press-list">
           <li class="press-item">
@@ -292,6 +330,7 @@
   <footer class="footer">
     <div class="container">
       <p class="footer__copy">&copy; 2026 Signal Psychology</p>
+      <p style="font-size: 0.75rem; color: var(--text-muted); opacity: 0.7; margin-top: 0.25rem;">Caitlin Stamatis, PhD · Licensed Psychologist · NJ #35SI00758000 · NY #025412</p>
       <ul class="footer__links">
         <li><a href="contact.html">Contact</a></li>
         <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
