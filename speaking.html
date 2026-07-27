@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Caitlin Stamatis, PhD">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <title>Speaking — Caitlin Stamatis, PhD | Keynotes, Panels &amp; Workshops</title>
+  <meta name="description" content="Caitlin Stamatis, PhD — keynote speaker and panelist on AI and mental health, digital therapeutics and clinical evidence, and mental health for high performers. For health-tech, clinical, academic, and workplace audiences.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .talk-list { list-style: none; margin-top: var(--space-md); }
+    .talk-item {
+      padding: var(--space-md) 0;
+      border-bottom: 1px solid var(--border-light);
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      gap: var(--space-md);
+      align-items: start;
+      transition: padding-left 0.3s ease;
+    }
+    .talk-item:first-child { border-top: 1px solid var(--border-light); }
+    .talk-item:hover { padding-left: 0.5rem; }
+    .talk-item__num {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      color: var(--text-muted);
+      font-weight: 300;
+      padding-top: 0.2rem;
+    }
+    .talk-item__title {
+      font-family: var(--font-serif);
+      font-size: 1.375rem;
+      font-weight: 400;
+      line-height: 1.3;
+      margin-bottom: 0.4rem;
+    }
+    .talk-item__desc { color: var(--text-muted); line-height: 1.7; max-width: 640px; }
+
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 820px;
+      aspect-ratio: 16 / 9;
+      margin: var(--space-md) 0 0;
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-lg);
+      margin-top: var(--space-md);
+    }
+    .meta-grid h3 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); font-weight: 600; margin-bottom: var(--space-sm); }
+    .meta-grid ul { list-style: none; }
+    .meta-grid li { padding: 0.4rem 0; border-bottom: 1px solid var(--border-light); color: var(--text-muted); font-size: 0.9375rem; }
+
+    .press-list { list-style: none; }
+    .press-item {
+      padding: var(--space-md) 0;
+      border-bottom: 1px solid var(--border-light);
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      gap: var(--space-md);
+      align-items: baseline;
+      transition: padding-left 0.3s ease;
+    }
+    .press-item:first-child { border-top: 1px solid var(--border-light); }
+    .press-item:hover { padding-left: 0.5rem; }
+    .press-item__outlet { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); font-weight: 500; }
+    .press-item__title { font-family: var(--font-serif); font-size: 1.125rem; font-weight: 400; line-height: 1.35; margin-bottom: 0.25rem; }
+    .press-item__date { font-size: 0.75rem; color: var(--text-muted); }
+
+    .testimonial { border-left: 2px solid var(--accent); padding: var(--space-sm) 0 var(--space-sm) var(--space-md); max-width: 720px; }
+    .testimonial__quote { font-family: var(--font-serif); font-size: 1.375rem; font-weight: 300; line-height: 1.5; color: var(--text); margin-bottom: var(--space-sm); font-style: italic; }
+    .testimonial__attribution { font-size: 0.875rem; color: var(--text-muted); letter-spacing: 0.01em; }
+    .testimonial__attribution a { color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 1px; transition: border-color 0.2s; }
+    .testimonial__attribution a:hover { border-color: var(--text); }
+
+    .book-box { border: 1px solid var(--border); padding: var(--space-lg); margin-top: var(--space-xl); }
+    .book-box h2 { font-size: 2rem; margin-bottom: var(--space-sm); }
+    .book-box p { color: var(--text-muted); max-width: 560px; line-height: 1.75; margin-bottom: var(--space-sm); }
+    .book-box a.email-link { font-size: 1.0625rem; color: var(--text); font-weight: 500; border-bottom: 1px solid var(--border); padding-bottom: 2px; transition: border-color 0.2s; }
+    .book-box a.email-link:hover { border-color: var(--text); }
+
+    @media (max-width: 768px) {
+      .meta-grid { grid-template-columns: 1fr; gap: var(--space-md); }
+      .press-item { grid-template-columns: 1fr; gap: 0.25rem; }
+      .talk-item { grid-template-columns: 1fr; gap: 0.25rem; }
+      .talk-item__num { display: none; }
+      .testimonial__quote { font-size: 1.125rem; }
+    }
+  </style>
+  <link rel="canonical" href="https://drstamatis.com/speaking.html">
+  <meta property="og:site_name" content="Caitlin Stamatis, PhD">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://drstamatis.com/speaking.html">
+  <meta property="og:title" content="Speaking — Caitlin Stamatis, PhD">
+  <meta property="og:description" content="Keynotes, panels, and workshops on AI and mental health, digital therapeutics, and workplace mental health.">
+  <meta property="og:image" content="https://drstamatis.com/img/headshot.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Speaking — Caitlin Stamatis, PhD">
+  <meta name="twitter:description" content="Keynotes, panels, and workshops on AI and mental health, digital therapeutics, and workplace mental health.">
+  <meta name="twitter:image" content="https://drstamatis.com/img/headshot.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://drstamatis.com/#caitlin",
+    "name": "Caitlin Stamatis",
+    "honorificSuffix": "PhD",
+    "jobTitle": "Clinical Psychologist & Digital Health Researcher",
+    "url": "https://drstamatis.com/",
+    "image": "https://drstamatis.com/img/headshot.jpg",
+    "description": "Keynote speaker and panelist on AI and mental health, digital therapeutics and clinical evidence, and mental health for high performers.",
+    "knowsAbout": ["AI safety in mental health","Digital therapeutics","Clinical evidence standards","Workplace mental health","Digital mental health"],
+    "sameAs": [
+      "https://www.linkedin.com/in/cstamatis/",
+      "https://app.qwoted.com/sources/caitlin-stamatis",
+      "https://scholar.google.com/citations?user=DkkecTkAAAAJ&hl=en"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav__logo">Caitlin Stamatis, PhD</a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="speaking.html" class="active">Speaking</a></li>
+        <li><a href="press.html">Press</a></li>
+        <li><a href="blog.html">Writing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav__mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero--light">
+    <div class="container">
+      <span class="eyebrow reveal">Speaking</span>
+      <h1 class="reveal reveal-d1">Keynotes, panels &amp;<br>workshops</h1>
+      <p class="hero__sub reveal reveal-d2">I speak to health-tech and AI companies, clinical and academic audiences, and workplaces about what it really takes to build — and trust — technology that touches people's mental health.</p>
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <span class="eyebrow">On stage</span>
+      <div class="video-wrap reveal">
+        <iframe src="https://www.youtube.com/embed/OdJrlxTixFY" title="Caitlin Stamatis speaking" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signature talks -->
+  <section class="section section--border">
+    <div class="container">
+      <span class="eyebrow">Signature talks</span>
+      <h2>Talks I'm known for.</h2>
+      <ul class="talk-list">
+        <li class="talk-item">
+          <span class="talk-item__num">01</span>
+          <div>
+            <div class="talk-item__title">Scaling Smart: Clinical Integrity in AI Mental Health Tools</div>
+            <p class="talk-item__desc">What it actually takes to build AI mental-health products that are safe and effective — and the failure modes that show up when speed outruns clinical rigor. For teams building the technology and the leaders deciding whether to trust it.</p>
+          </div>
+        </li>
+        <li class="talk-item">
+          <span class="talk-item__num">02</span>
+          <div>
+            <div class="talk-item__title">Beyond Simulations: What 20,000 Real Conversations Reveal About AI Safety</div>
+            <p class="talk-item__desc">What changes when you study AI mental-health support in the real world instead of the lab — and what it teaches us about red-teaming, safety, and how people actually use these tools when no one is watching.</p>
+          </div>
+        </li>
+        <li class="talk-item">
+          <span class="talk-item__num">03</span>
+          <div>
+            <div class="talk-item__title">Evidence-Informed Is Not Evidence-Based</div>
+            <p class="talk-item__desc">A clear-eyed tour of the evidence landscape in digital health: what the research genuinely supports, what it doesn't, and how to make product claims you can stand behind. For product, clinical, and regulatory teams who want to get it right.</p>
+          </div>
+        </li>
+        <li class="talk-item">
+          <span class="talk-item__num">04</span>
+          <div>
+            <div class="talk-item__title">High-Functioning, Running on Empty</div>
+            <p class="talk-item__desc">Mental health for high performers in tech, medicine, and academia — why the most capable people are often the most quietly depleted, why they're the least likely to ask for help, and what organizations can do about it.</p>
+          </div>
+        </li>
+      </ul>
+      <p style="margin-top: var(--space-md); color: var(--text-muted); font-size: 0.9375rem; line-height: 1.7; max-width: 640px;">Every talk is tailored to the audience — I'll build the version that fits your room, whether that's an engineering team, a clinical conference, a boardroom, or a lecture hall.</p>
+    </div>
+  </section>
+
+  <!-- Formats & audiences -->
+  <section class="section section--border">
+    <div class="container">
+      <span class="eyebrow">Formats &amp; audiences</span>
+      <div class="meta-grid">
+        <div>
+          <h3>Formats</h3>
+          <ul>
+            <li>Keynote</li>
+            <li>Fireside chat / moderated interview</li>
+            <li>Expert panel</li>
+            <li>Half-day workshop or training</li>
+            <li>Guest lecture</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Audiences</h3>
+          <ul>
+            <li>Health-tech &amp; AI companies</li>
+            <li>Clinical &amp; academic conferences</li>
+            <li>Healthcare &amp; pharma leadership</li>
+            <li>Employers &amp; workplace events</li>
+            <li>University courses</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Selected engagements -->
+  <section class="section section--border">
+    <div class="container">
+      <span class="eyebrow">Selected engagements</span>
+      <ul class="press-list">
+        <li class="press-item">
+          <div class="press-item__outlet">Wellcome Trust</div>
+          <div>
+            <div class="press-item__title">US Perspective: Successes and Challenges in Digital Mental Health Innovation</div>
+            <div class="press-item__date">London, January 2026</div>
+          </div>
+        </li>
+        <li class="press-item">
+          <div class="press-item__outlet">APA Convention</div>
+          <div>
+            <div class="press-item__title">Evolving Treatment Solutions for Depression Symptoms: The Role of Digital Therapeutics</div>
+            <div class="press-item__date">Denver, August 2025</div>
+          </div>
+        </li>
+        <li class="press-item">
+          <div class="press-item__outlet">Society for Digital Mental Health</div>
+          <div>
+            <div class="press-item__title">Scaling Smart: The Challenge of Clinical Integrity in AI Mental Health Tools</div>
+            <div class="press-item__date">June 2025</div>
+          </div>
+        </li>
+        <li class="press-item">
+          <div class="press-item__outlet">ABCT</div>
+          <div>
+            <div class="press-item__title">Engagement in Digital Mental Health — Invited Panel</div>
+            <div class="press-item__date">New Orleans, November 2025</div>
+          </div>
+        </li>
+        <li class="press-item">
+          <div class="press-item__outlet">WELL Women</div>
+          <div>
+            <div class="press-item__title">Women Leaders in Digital Health</div>
+            <div class="press-item__date">December 2025</div>
+          </div>
+        </li>
+        <li class="press-item">
+          <div class="press-item__outlet">BiteLabs Fellowship</div>
+          <div>
+            <div class="press-item__title">Navigating the US Digital Health Ecosystem: The Clinician's Role in Technology Development</div>
+            <div class="press-item__date">May 2025</div>
+          </div>
+        </li>
+        <li class="press-item">
+          <div class="press-item__outlet">MBGH</div>
+          <div>
+            <div class="press-item__title">Mental Health in the Workplace — Expert Panel</div>
+            <div class="press-item__date">Chicago, February 2024</div>
+          </div>
+        </li>
+        <li class="press-item">
+          <div class="press-item__outlet">Weill Cornell</div>
+          <div>
+            <div class="press-item__title">Personal Sensing of Depression and Anxiety Symptoms — Research Grand Rounds</div>
+            <div class="press-item__date">New York, May 2023</div>
+          </div>
+        </li>
+        <li class="press-item">
+          <div class="press-item__outlet">NYU School of Medicine</div>
+          <div>
+            <div class="press-item__title">Cognitive, Behavioral, and Affective Correlates of Repetitive Negative Thinking — Research Grand Rounds</div>
+            <div class="press-item__date">New York, February 2023</div>
+          </div>
+        </li>
+      </ul>
+      <p style="margin-top: var(--space-sm); color: var(--text-muted); font-size: 0.875rem;">A selected list — full speaking history includes 30+ invited talks and 40+ conference presentations.</p>
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section class="section section--border">
+    <div class="container">
+      <span class="eyebrow">What hosts say</span>
+      <div style="margin-top: var(--space-md);">
+        <blockquote class="testimonial">
+          <p class="testimonial__quote">"Caitlin facilitated a thoughtful and engaging discussion with graduate students in my Digital Mental Health course at Dartmouth — a group with diverse backgrounds and career goals. Her ability to communicate complex ideas, from clinical nuances to implementation barriers in digital health, is unmatched. Her guest lecture sparked one of the most engaging conversations of the course, and several students shared this was a highlight of the term."</p>
+          <p class="testimonial__attribution">— <a href="https://www.c4tbh.org/meet-our-team/madelyn-r-frumkin/" target="_blank" rel="noopener">Dr. Madelyn R. Frumkin</a>, Dartmouth</p>
+        </blockquote>
+        <!-- Add more host testimonials by copying the blockquote above -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section class="section section--border">
+    <div class="container">
+      <div class="book-box">
+        <h2>Invite me to speak</h2>
+        <p>I take on a limited number of keynotes and workshops each year, and also accept selected academic and nonprofit invitations. Tell me about your audience and what you're hoping they take away, and I'll come back with a fit, a format, and availability.</p>
+        <p>For topics, dates, and fees: <a href="mailto:press@drstamatis.com" class="email-link">press@drstamatis.com</a></p>
+        <a href="contact.html" class="btn btn--dark" style="display: inline-block; margin-top: var(--space-md);">Start a conversation</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copy">&copy; 2026 Caitlin Stamatis, PhD</p>
+      <p style="font-size: 0.75rem; color: var(--text-muted); opacity: 0.7; margin-top: 0.25rem;">Caitlin Stamatis, PhD · Licensed Psychologist · NJ #35SI00758000 · NY #025412</p>
+      <ul class="footer__links">
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://www.linkedin.com/in/cstamatis/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

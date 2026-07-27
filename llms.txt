@@ -7,6 +7,9 @@
 ## Services
 - [Services](https://drstamatis.com/services.html): Health-tech clinical consulting (clinical strategy, research design, content & safety review, workshops) and virtual individual therapy. Licensed in NY, NJ, and 40+ PSYPACT states.
 
+## Speaking & Press
+- [Speaking](https://drstamatis.com/speaking.html): Keynotes, panels, and workshops on AI & mental health, digital therapeutics, and workplace mental health
+
 ## Credibility
 - [Research](https://drstamatis.com/research.html): 50+ peer-reviewed publications on digital mental health, AI safety in mental health, digital therapeutics, anxiety, and depression
 - [Press & Speaking](https://drstamatis.com/press.html): Media commentary and 30+ invited talks (Wellcome Trust, APA, SDMH, ABCT)
